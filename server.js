@@ -5,6 +5,7 @@ const cors = require("cors")
 const authRouter = require("./auth/auth-router")
 const ordersRouter = require("./router/orders-router")
 const itemsRouter = require("./router/items-router")
+const usersRouter = require("./router/users-router")
 const restricted = require("./auth/restricted-middleware.js")
 
 
@@ -22,6 +23,7 @@ server.use(
 server.use("/api/auth", authRouter)
 server.use("/api/items", itemsRouter)
 server.use("/api/orders", ordersRouter)
+server.use("/api/users", usersRouter)
 
 server.get("/", (req, res) => {
     res.status(200).json({ Victor_Frankenstein: "It LIVEEEESSSSSSS" })

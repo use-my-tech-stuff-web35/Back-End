@@ -56,10 +56,10 @@ router.post("/login", (req, res) => {
   }
 })
 
-function makeJwt({ id, username, role }) {
+function makeJwt({ id, username, renter }) {
   const payload = {
     username,
-    role,
+    renter,
     subject: id,
   }
   const config = {
