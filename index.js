@@ -1,3 +1,4 @@
+require('dotenv').config()
 const server = require('./server')
 const chalk = require('chalk')
 
