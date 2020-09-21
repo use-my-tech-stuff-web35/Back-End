@@ -24,8 +24,8 @@ exports.up = function(knex) {
     })
     .createTable('orders', tbl => {
       tbl.increments()
-      foreignKey(tbl, users, user_id)
-      foreignKey(tbl, items, item_id)
+      foreignKey(tbl, "users", "user_id")
+      foreignKey(tbl, "items", "item_id")
     })
 }
 

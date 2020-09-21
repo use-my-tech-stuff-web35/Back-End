@@ -16,7 +16,7 @@ router.post("/register", (req, res) => {
 
     credentials.password = hash
 
-    helper.add(credentials)
+    helper.add(credentials, "users")
     .then(user => {
       const token = makeJwt(user)
 

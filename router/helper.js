@@ -18,6 +18,10 @@ function findById(id,table) {
   return db(table).where({ id }).first() 
 }
 
+function findBy(filter) {
+  return db("users").where(filter).orderBy("id"); 
+}
+
 function update(changes, id, table) {
   return db(table) 
   .update(changes)
@@ -40,6 +44,7 @@ function remove(id, table) {
 
 module.exports ={
   find,
+  findBy,
   findById,
   add,
   update,
