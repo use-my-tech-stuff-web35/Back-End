@@ -1,5 +1,4 @@
 # Back-End
-How-To
 ## Documentation
 Base URL for deployed API: https://bw-how-2.herokuapp.com/
 ## **Endpoints**
