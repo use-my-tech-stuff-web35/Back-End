@@ -45,7 +45,7 @@ Base URL for deployed API: https://bw-how-2.herokuapp.com/
 
 ## **Login's**
 If i need to update the database at any point during the week all users made up until that point will be deleted. These logins will always be available to use.
-| username | password | isAdmin |
+| username | password | renter |
 | ----- | -------- | ---- |
 | admin | pass | true |
 | user | pass | false |
