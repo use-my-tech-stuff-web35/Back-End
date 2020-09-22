@@ -1,6 +1,6 @@
 # Back-End
 ## Documentation
-Base URL for deployed API: https://bw-how-2.herokuapp.com/
+
 ## **Endpoints**
 | Method | URL | Description | Requires Token | Requires Admin |
 |--------|-----|-------------|----------------|----------------|
