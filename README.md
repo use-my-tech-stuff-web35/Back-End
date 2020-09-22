@@ -1,5 +1,6 @@
-# Back-End
-## Documentation
+# My Used Tech Stuff
+
+deployed endpoint https://used-tech.herokuapp.com/
 
 ## **Endpoints**
 | Method | URL | Description | Requires Token | Requires Admin |
