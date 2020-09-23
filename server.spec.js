@@ -109,7 +109,7 @@ describe("auth testing", () => {
       .then(res => {
         expect(res.status).toBe(200)
       })  
-    });
+    })
     it('add an order to the database', async () => {
       await db("orders").truncate()
       return supertest(server)
