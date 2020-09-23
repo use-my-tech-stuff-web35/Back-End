@@ -29,7 +29,7 @@ router.put('/:id', (req, res) => {
   .catch(err => res.status(500).json({status: 500, err}))
 })
 
-router.delete('/:id', checkRole(), (req, res) => {
+router.delete('/:id', (req, res) => {
   const id = req.params.id
   helper.remove(id, 'items')
   .then(rez => res.status(200).json(rez))
