@@ -38,7 +38,7 @@ router.delete('/:id', (req, res) => {
 
 function checkRole() {
   return (req, res, next) => {
-    if (req.jwt.role === true) {
+    if (req.jwt.renter === true) {
       next();
     } else {
       res.status(403).json({ message: 'You are not authorized' });
