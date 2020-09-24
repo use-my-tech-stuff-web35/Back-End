@@ -5,16 +5,16 @@ deployed endpoint https://used-tech.herokuapp.com/
 ## **Endpoints**
 | Method | URL | Description | Requires Token | Requires Admin |
 |--------|-----|-------------|----------------|----------------|
-|register/login |||||
+|### register/login |||||
 | POST | /api/auth/register | register a new user |  - | - |
 | POST | /api/auth/login | login as existing user | - | - |
-|items |||||
+|### items |||||
 | POST | /api/items | creates new item  | x | - |
 | GET | /api/items | gets all items in the database | x | - |
 | GET | /api/items/:id | gets item by ID | x | - |
 | PUT | /api/items/:id | edit a item | x | - |
 | DELETE | /api/items/:id | delete a item | x | - |
-|orders |||||
+|### orders |||||
 | POST | /api/orders | places a new order to the database | x | - |
 | GET | /api/orders | returns a list of orders  | x | - |
 | GET | /api/orders/:id | gets order by ID | x | - |
