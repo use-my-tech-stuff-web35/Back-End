@@ -48,7 +48,7 @@ deployed endpoint https://used-tech.herokuapp.com/
 {
 	"item": "New Item",
   "user_id": 2,
-  "rented"
+  "rented": false
 }
 ```
 
