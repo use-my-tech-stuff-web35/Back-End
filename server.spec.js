@@ -22,7 +22,7 @@ describe("auth testing", () => {
           expect(res.body.data.username).toBe("sam")
         })
     })
-    it('should return 500 if user is already created', async () => {
+    it('should return 500 if user is already created',  () => {
       return supertest(server)
       .post("/api/auth/register")
       .send({ username: "sam", password: "pass" })
@@ -33,7 +33,7 @@ describe("auth testing", () => {
   })
   
   describe('/login', () => {
-    it('should return 400 upon unsuccessful login', async () => {
+    it('should return 400 upon unsuccessful login',  () => {
       return supertest(server)
       .post("/api/auth/login")
       .send({ username: "sam", password: "" })
@@ -41,7 +41,7 @@ describe("auth testing", () => {
         expect(res.status).toBe(400)
       })
     })
-    it('should return 200 upon successful login', async () => {
+    it('should return 200 upon successful login',  () => {
       return supertest(server)
       .post("/api/auth/login")
       .send({ username: "sam", password: "pass" })
