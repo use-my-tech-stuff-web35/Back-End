@@ -46,7 +46,7 @@ deployed endpoint https://used-tech.herokuapp.com/
 ### Create New Item [ POST ]
 ```js
 {
-	"item": "New Item",
+  "item": "New Item",
   "user_id": 2,
   "rented": false
 }
